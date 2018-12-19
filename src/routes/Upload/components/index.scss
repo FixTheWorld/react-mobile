@@ -1,0 +1,86 @@
+.cj-preview{
+  display: flex;
+  flex-wrap: wrap;
+  padding:0;
+  list-style: none;
+  max-width: 300px;
+  font-size: 20px;
+
+  li{
+    flex-basis: 24%;
+    margin: 0 0.5%;
+    padding-bottom: 24%;
+    position: relative;
+    height: 0;
+    margin-bottom: 3px;
+    >div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      border:dashed 1px deepskyblue;
+    }
+  }
+
+  .cj-del{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 10;
+    line-height: 0.5;
+    font-size: 30px;
+    color:#e91e63;
+  }
+}
+.cm-dialog{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .modal-dialog{
+    max-width:90%;
+    max-height: 90%;
+  }
+  .cm-close-dialog{
+    position:absolute;
+    top:7px;
+    right:7px;
+    font-size: 20px;
+  }
+}
+.cj-hide{
+  display: none;
+}
+
+.cj-img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cm-fr{float: right;}
+
+.cj-notice{
+  color:red;
+}
+.cm-btn{
+  -webkit-appearance: button;
+  background-color: #29c3db;
+  border:0;
+  outline:none;
+}
+
+.cj-bottom{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  .cm-btn{
+    flex: 1;
+    height: 45px;
+    color:white;
+  }
+}
